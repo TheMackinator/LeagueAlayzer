@@ -23,4 +23,20 @@
   align-items: center;
   justify-content: center;
   grid-area: content;
+
+  input[type="search"] {
+    min-height: 70px;
+    min-width: 280px;
+    font-size: 32px;
+    background: var(--gray-light);
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 14px;
+
+    &:focus {
+      background: var(--gray-dark);
+      box-shadow: 0 0 8px 3px var(--color-primary-700);
+    }
+  }
 }
