@@ -1,24 +1,27 @@
 import ReactDOM from "react-dom/client";
 import {
-  BrowserRouter,
-  Routes,
-  Route,
+    BrowserRouter,
+    Routes,
+    Route,
 } from "react-router-dom";
 import App from "./App";
 import Home from './components/Home';
+import MatchHistory from './components/MatchHistory';
 // import your route components too
 
 const root = ReactDOM.createRoot(
-  document.getElementById("root")
+    document.getElementById("root")
 );
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<Home />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<App />}>
+                <Route index element={<Home />} />
+                <Route path=":summonerName" element={<MatchHistory />} />
+            </Route>
+
+        </Routes>
+    </BrowserRouter>
 );
 
 

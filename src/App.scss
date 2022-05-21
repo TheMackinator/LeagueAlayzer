@@ -39,4 +39,22 @@
       box-shadow: 0 0 8px 3px var(--color-primary-700);
     }
   }
+
+  .search-form {
+    display: flex;
+    position: relative;
+
+    label {
+      font-size: 32px;
+      display: block;
+      top: -27px;
+      position: absolute;
+    }
+
+    button {
+      margin-left: 14px;
+      height: 70px;
+      align-self: flex-end;
+    }
+  }
 }
