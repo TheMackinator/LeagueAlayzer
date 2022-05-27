@@ -1,15 +1,15 @@
+class MatchHistory extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { summonerName: '' };
 
-function MatchHistory() {
-    return (
-        <header className="app-header">
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Away</li>
-                </ul>
-            </nav>
-        </header>
-    );
+    }
+
+    render() {
+        return (
+            <div className="list-container">
+            </div>
+        )
+    }
+
 }
-
-export default MatchHistory
